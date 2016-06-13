@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script>
+
+a = ['a','b','c','d','e','f','g'];
+b = ['b','c'];
+var i=j= 0;
+var found = 0;
+for(i=0;i<a.length;i++)
+{  if(a[i] == b[j])
+  {     
+	   while( a[i+j] == b[j]  && (j < b.length) )
+	   {   j++;   
+	   }
+	   
+		if(j == b.length)
+		   
+		{
+		  found = 1;
+			 break;
+		}
+		j =0;         
+  }
+}
+  
+		if (found == 1)
+		{
+		document.write("match found at" + i);
+		} 
+
+		else
+
+		{
+		document.write("not matched");
+		}
+
+
+
+
+
+                       
+     
+
+
+
+</script>
+
+</body>
+</html>
