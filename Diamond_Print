@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<script>
+
+var i,j,k;
+
+for(i=1;i<=5;i++)
+{
+
+for(j=0;j<5-i;j++)
+
+document.write("&nbsp&nbsp");
+
+for(k=1;k<2*i;k++)
+
+document.write("*");
+
+document.write("<br>");
+
+}
+
+
+for(i=1;i<=5;i++)
+{
+
+for(j=0;j<i;j++)
+
+document.write("&nbsp&nbsp");
+
+for(k=1;k<2*(5-i);k++)
+
+document.write("*");
+
+document.write("<br>");
+
+}
+
+</script>
+</body>
+</html>
