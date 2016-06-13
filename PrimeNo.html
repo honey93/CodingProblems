@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<script>
+
+var i,j,k,n,l;
+
+n = 20;
+
+
+for(j=2;j<n;j++){
+l = 0;
+k = Math.sqrt(j);
+for(i=2;i<=k;i++)
+	{
+	if (j%i == 0)
+	  { l = 1;
+	   break;
+	  }
+	}
+ 
+if(l == 1)
+document.write(" ");
+else
+document.write(j);
+
+}
+
+
+</script>
+</body>
+</html>
