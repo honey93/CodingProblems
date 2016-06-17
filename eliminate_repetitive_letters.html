@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<script>
+
+
+var i,j,k,l;
+
+var a = "helloworld";  //hello 
+var b = [];
+
+for(i=0;i<a.length;i++){
+	b[i] = a[i];
+}
+
+for(i=0;i<b.length;i++){
+
+  for(j=i+1;j<b.length;j++){
+  
+	  if(b[i] == b[j]){
+		k = j;
+		while(k<b.length-1){
+		
+			b[k] = b[k+1];
+			k = k + 1;
+		}
+        b.length  = b.length - 1;		
+	    j = j-1;
+	  }
+  
+  }
+
+}
+
+
+for(i=0;i<b.length;i++){
+document.write(b[i]);
+}
+
+
+
+</script>
+</body>
+</html>
+
+
+
