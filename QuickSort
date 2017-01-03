@@ -1,0 +1,46 @@
+/Quick Sort
+
+A = [7,3,2,1,5,6,4];
+
+
+		int partition(int A[],int start,int end){
+
+			int pivot = a[end]
+			int partitioni = start
+			int i
+			for(i=0;i<end;i++){
+			
+				if(a[i] <= pivot ){
+				
+					swap(a[i],partitioni);
+					
+					parrtitioni = partitioni + 1;
+				
+				}
+
+
+			}
+			
+			swap(a[end],a[partitioni]);
+				return partitioni;
+		
+		}
+		
+		
+		void quickSort(int A[],int start,int end){
+			if(start < end){
+				int pIndex = partition(A,start,end);
+				quickSort(A,start,pIndex-1)
+				quickSort(A,pIndex+1,end)	
+			}	
+		
+		}
+		
+		
+		int main(){
+		
+		int A[] = {7,6,5,4,3,2,10};
+		quicksort(A,0,7);
+		for(i=0;i<8;i++)
+		cout <<A[i]<<" ";
+		}
