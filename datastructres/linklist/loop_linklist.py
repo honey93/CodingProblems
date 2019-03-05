@@ -10,7 +10,7 @@ class LinkList:
   def push(self,data):
       temp = Node(data)
       temp.next = self.head
-      self.head = temp
+      self.head = temp 
       
     
   def printList(self):
