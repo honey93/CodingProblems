@@ -1,10 +1,10 @@
 class SchoolMember:
     __populationSchool = 0
 
-    def __init__(self,name,age):
+    def __init__(self,name,age,type):
         self.name = name
         self.age = age
-        self.type = None
+        self.type = type
         SchoolMember.__populationSchool +=1
 
     def tell(self):
@@ -20,11 +20,9 @@ class SchoolMember:
 class Student(SchoolMember):
     __studentPopulation = 0
     def __init__(self,name,age,marks,fee):
-        SchoolMember.__init__(self,name,age)
+        SchoolMember.__init__(self,name,age,"Student")
         self.__marks = 80
         self.fee = fee
-        self.type = "Student"
-        #SchoolMember.__populationSchool +=1
         Student.__studentPopulation += 1
 
 
@@ -42,5 +40,5 @@ if(__name__ == "__main__"):
     s2 = Student("Shubhi",27,80,920000)
     s3 = Student("Stu3",27,80,90000)
     s3.get_studentPop()
-    s2.tell()
-    s2.studentInfo()
+    s1.tell()
+    s1.studentInfo()
